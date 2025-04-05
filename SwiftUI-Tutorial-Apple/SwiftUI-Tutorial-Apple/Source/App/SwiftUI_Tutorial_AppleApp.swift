@@ -2,9 +2,11 @@ import SwiftUI
 
 @main
 struct SwiftUI_Tutorial_AppleApp: App {
+    @State private var modelData = ModelData()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FavoriteButton(isSet: .constant(true))
         }
     }
 }
